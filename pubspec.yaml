@@ -1,8 +1,8 @@
 name: ornate_timer
 description: Custom timer with animation
 version: 0.0.1
-author: Denis Łaskawiec
-homepage:
+author: laskawy <laskawiecdenis@gmail.com>
+homepage: https://github.com/laskawy/ornate-timer/
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

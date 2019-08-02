@@ -5,28 +5,30 @@ import 'package:flutter/material.dart';
 /// Ornate Timer.
 class OrnateTimer extends StatefulWidget {
   final Color color;
+  final int seconds;
 
-  const OrnateTimer({Key key, this.color}) : super(key: key);
+  const OrnateTimer({Key key, this.color, this.seconds}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => _OrnateTimerState(color);
+  State<StatefulWidget> createState() => _OrnateTimerState(color, seconds);
 }
 
 class _OrnateTimerState extends State<OrnateTimer>
     with TickerProviderStateMixin {
   final Color color;
+  final int seconds;
   AnimationController _controller;
   Animation<double> _animation;
   bool animationEnding = false;
   Tween _tween;
 
-  _OrnateTimerState(this.color);
+  _OrnateTimerState(this.color, this.seconds);
 
   @override
   void initState() {
     super.initState();
     _controller =
-        AnimationController(vsync: this, duration: Duration(seconds: 10));
+        AnimationController(vsync: this, duration: Duration(seconds: seconds));
 
     _tween = new Tween<double>(begin: 0, end: 307);
 

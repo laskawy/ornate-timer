@@ -1,3 +1,9 @@
-## [0.0.1] - TODO: Add release date.
+### Ornate timer
 
-* TODO: Describe initial release.
+## [0.0.1] - 02.08.2019r.
+
+* Initial release without setting time.
+
+## [0.0.2] - 02.08.2019r.
+
+* Allow to set custom time in seconds
